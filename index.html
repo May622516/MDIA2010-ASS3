@@ -1,0 +1,147 @@
+<!--
+REFERENCES:
+1. Kietzmann, J. & Pitt, L. (2020). Deepfakes: Trick or treat? Business Horizons.
+2. Verdoliva, L. (2020). Media Forensics and DeepFake Detection.
+3. Ienca, M. & Andorno, R. (2017). Towards new human rights in the age of neuroscience and neurotechnology.
+4. Roache, R. (2021). Neuroprivacy and the ethics of brain data.
+5. O’Brolcháin, F. (2016). The ethics of brain-computer interfaces.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Tribunal Live: The Emily Wu Case</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Memory Tribunal Live</h1>
+    <h2>The Emily Wu Case</h2>
+    <p class="subtitle">Neuro-rights on trial at Sydney's Justice Centre</p>
+  </header>
+
+  <main>
+
+    <section id="intro">
+
+      <p>It’s early evening at Sydney’s gleaming Justice Centre, a monolithic structure of glass and neural steel overlooking the harbour. Inside, beneath its vaulted neuro-sensitive ceiling, a holographic screen flickers to life. Across its shimmering surface, fragments of Emily Wu’s childhood begin to play — her mother gently braiding her hair on a quiet morning before school, the hesitant confession to a friend that marked the discovery of her sexuality, the blurred and trembling recollection of her first panic attack at age thirteen.</p>
+      <p>None of these memories were uploaded voluntarily.</p>
+      <p>They were taken.</p>
+      <p>Stolen from a private psychological consultation — a neural therapy session meant to remain sealed by law — and illegally extracted, then sold and circulated as part of a corporate defamation case. Now, stripped of all privacy, Emily’s most intimate moments are projected in front of lawyers, officials, journalists, and strangers. What was once a safe space for healing has become a spectacle. The courtroom has transformed into a theatre of vulnerability, where raw emotion is examined like evidence and trauma becomes narrative.</p>
+      <p>Spectators sit in stunned silence, unsure whether they’re witnessing a trial or a violation. A tearful moment draws a murmur of sympathy from the crowd, but even that is recorded — catalogued by facial sentiment analysis in real-time, stored for later review. Behind her MemorySeal, Emily cannot see the screen, but she feels its presence — like a second self unraveling in front of an audience.</p>
+      <p>Outside, activists chant against the use of involuntary memory-extraction. Inside, justice and exploitation blur into one.</p>
+
+    </section>
+
+    <section id="trial">
+
+      <h3>Inside the Tribunal</h3>
+
+      <p>The tribunal chamber hums with a cold, clinical silence, broken only by the flicker of screens and the occasional whir of biometric scanners. On one side, prosecutors stand firm, presenting neural data extracted from Emily’s MemoryLink sessions. They argue that these memories — fragmentary, emotional, raw — offer <strong>"relevant psychological context."</strong>shedding light on Emily’s intent, state of mind, and the unspoken layers of her experience. "This isn’t just evidence," one lawyer insists, "it’s transparency. It’s truth unfiltered by fear or fabrication."</p>
+      <p>Across the chamber, Emily sits restrained and isolated under the heavy chrome dome of a <span class="tooltip" onclick="showModal('memorysealModal')">MemorySeal</span>— a government-approved device that shields her remaining memories from involuntary extraction. It’s designed to give her partial agency in a process that no longer feels human. Beneath the helmet, she shivers — not from cold, but from the knowledge that parts of her consciousness have already been played, paused, and dissected like security footage.</p>
+      <p>Her counsel calls the practice invasive and unconstitutional, likening the memory review process to a mental strip search. But in a world where memory is currency, and truth is seen as retrievable, Emily’s silence may not be enough.</p>
+    </section>
+
+    <section id="emotion-visualization">
+  <h3>Neural Emotion Scan</h3>
+
+  <p>Real-time analysis of emotional resonance during memory playback.</p>
+  <canvas id="emotionChart"></canvas>
+
+</section>
+
+
+    <section id="outside">
+
+      <h3>Outside the Courtroom</h3>
+      <p>Protesters chant “Our minds are not a market!” as the neon-lit plaza outside Sydney’s Justice Centre pulsates with unrest. Some demonstrators wear DIY neuro-blocker helmets made from kitchen foil and scavenged tech, while others stream the tribunal live through AR contact lenses, broadcasting their outrage in real time. Holographic protest signs flicker with slogans like “No Consent, No Access” and “Neuro Transparency ≠ Justice.”
+      <p>Meanwhile, a black-market bazaar thrives in the shadow of the building. Vendors in hooded jackets whisper through teeth-gritted grins, offering bootleg memory scrolls—unauthorized neural recordings of celebrities, politicians, and even criminals. “Emily’s First Love – Uncut” sells for more than a week’s wages on the neuro-market.</p>
+      <p>Children clutch “MemorySeal” plush toys shaped like helmets, while nearby walls are tagged with graffiti:</p>
+      <p>“Cognition is not Capital.”</p>
+      <p>“Delete Before Upload.”</p>
+      <p>Drones hover overhead, scanning brainwave patterns for crowd compliance. The tension is thick—less like a peaceful demonstration, more like a live memory leak. What was once a space for justice is now a battleground for the soul.</p>
+   
+    </section>
+
+    <section id="debate">
+      <h3>The National Debate</h3>
+      <p>Emily’s case has ignited a fierce national debate, dividing legal experts, ethicists, technologists, and the public at large. At the heart of the controversy lies a fundamental question: Should memories, extracted through neurotechnologies like MemoryLink USB, be treated as admissible evidence in court, or are they too intimate — too sacred — to be exposed, scrutinized, and archived?</p>
+      <p>Some argue that memory-sharing technologies offer a revolutionary tool for justice, enabling courts to bypass unreliable testimony and gain direct access to lived experience. Others warn that such practices risk violating cognitive sovereignty, blurring the line between truth and perception, and turning the most private corners of the human mind into instruments of surveillance and control.
+      <p>Emily’s trial has become a flashpoint in this cultural and legal reckoning. If her memories are admitted as evidence, the definition of consent may be irreversibly altered in an era of neuro-transparency — where privacy, once assumed, must now be explicitly negotiated.</p>
+      <p>The stakes are not limited to a single case. The decision could set a precedent, reshaping the future of law, intimacy, and personal freedom. As the public watches, one question echoes louder than the rest: In a society where minds can be accessed, who truly owns a memory?</p>
+     
+
+      <div id="voting">
+
+        <h4>Should memory be used as evidence?</h4>
+        <button onclick="vote('yes')">Yes</button>
+        <button onclick="vote('no')">No</button>
+        <canvas id="voteChart"></canvas>
+
+      </div>
+
+    </section>
+
+    <section id="technologies">
+
+      <h3>Memory Technologies on Trial</h3>
+
+      <p><strong>MemoryLink USB</strong> was initially designed to aid Alzheimer's treatment by allowing memory recording and sharing. But in recent years, its uses have expanded—education, therapy, surveillance, and now, courtrooms.</p>
+      <p><strong>MemorySeal</strong> is a defensive neurohelmet designed by activists. It filters real-time brainwaves and blocks unauthorized cognitive extraction, though it remains controversial due to its high cost and limited access.</p>
+  
+    </section>
+
+    <section id="image-player" class="gallery">
+
+  <h3>Visual Archive Playback</h3>
+  <img id="slideshow" src="images/neural-scan.png" alt="Visual Archive">
+  <p id="caption">Neural Scan / Memory Map</p>
+  <button onclick="toggleSlideshow()">▶ Play Visual Archive</button>
+
+</section>
+
+    <section id="environment">
+      <h3>Sound Simulation</h3>
+
+      <audio id="bg-audio" loop autoplay muted>
+        <source src="sounds/courtroom_ambience.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div style="text-align:center; margin-top: 1rem;">
+        <button onclick="switchSound('courtroom_ambience.mp3')">🎙️ Courtroom Ambience</button>
+        <button onclick="switchSound('protest_muffled.mp3')">📣 Protest Crowd</button>
+        <button onclick="toggleMute()">🔈 Toggle Mute</button>
+      </div>
+
+    </section>
+  </main>
+
+<div id="glitch-text" class="glitch-text">⚠ MEMORY FRAGMENT CORRUPTED</div>
+<audio id="glitch-sound" preload="auto">
+  <source src="sounds/glitch_warning.mp3" type="audio/mpeg">
+</audio>
+
+
+
+  <footer>
+    <p>&copy; 2088 MemoryTribunal.live | Created for speculative media literacy</p>
+  </footer>
+
+  <div id="memorysealModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('memorysealModal')">&times;</span>
+      <h3>What is MemorySeal?</h3>
+      <p>The MemorySeal is a neurotechnological helmet that protects individuals from unauthorized cognitive extraction. It creates a protective cognitive buffer, allowing the wearer to preserve mental privacy in hostile environments.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
